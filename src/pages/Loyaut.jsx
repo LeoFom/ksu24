@@ -1,11 +1,13 @@
 import { useState } from "react";
-
+import React from "react";
 import "../styles/diary.scss";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import "../styles/nppTable.scss"
+import axios from "axios";
 
 function Loyaut() {
   const [inputValue, setInputValue] = useState(0);
+
 
 
     return(

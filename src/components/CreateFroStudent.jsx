@@ -1,6 +1,28 @@
+import { useState } from "react";
 import "../styles/CreateFromStudent.scss";
 
 export default function CreateFromStudent() {
+  const [createDiary, setCreateDiary] = useState({
+    "id": 1,
+    "name": "Практична 461 Фоменко",
+    "week": 6,
+    "date": "10.04.2023 - 02.06.2023",
+    "grade": "60E",
+    "course": 4,
+    "supervisor": "Лемещук О. В.",
+    "edit": true,
+    "state": true,
+    "workName": "Аналіз ШІ",
+    "workTask": [
+      "Аналіз шкільної программи",
+      "Аналіз 15-и ШІ"
+    ],
+    "file": true
+})
+  const diaryCreatePost = (obj) => {
+    axios.post('https://658b4f21ba789a962238a6e6.mockapi.io/examplePost', obj)
+  } 
+  
   return (
     <section className="createBlock">
       <div className="prevButton">
@@ -31,36 +53,36 @@ export default function CreateFromStudent() {
           <div className="ElementBody">
             <div className="element">
               <label>Кількість тижнів</label>
-              <input type="text" />
+              <input onChange={setCreateDiary(createDiary.week)} type="text" />
             </div>
             <div className="element">
-              <label>Кількість тижнів</label>
-              <input type="text" />
+              <label>Викладач - керівник за фахом</label>
+              <input onChange={setCreateDiary(createDiary.supervisor)} type="text" />
             </div>
             <div className="element">
-              <label>Кількість тижнів</label>
-              <input type="text" />
+              <label>Викладач - керівник за фахом</label>
+              <input onChange={setCreateDiary(createDiary.supervisor)} type="text" />
             </div>
             <div className="element">
-              <label>Кількість тижнів</label>
-              <input type="text" />
+              <label>Викладач - керівник за фахом</label>
+              <input onChange={setCreateDiary(createDiary.supervisor)} type="text" />
             </div>
 
             <div className="element">
-              <label>Кількість тижнів</label>
+              <label>База практики</label>
+              <input  type="text" />
+            </div>
+            <div className="element">
+              <label>Керівник від бази практики</label>
               <input type="text" />
             </div>
             <div className="element">
-              <label>Кількість тижнів</label>
-              <input type="text" />
+              <label>Термін проходження</label>
+              <input onChange={setCreateDiary(createDiary.date)} type="text" />
             </div>
             <div className="element">
-              <label>Кількість тижнів</label>
-              <input type="text" />
-            </div>
-            <div className="element">
-              <label>Кількість тижнів</label>
-              <input type="text" />
+              <label>Термін проходження</label>
+              <input onChange={setCreateDiary(createDiary.date)} type="text" />
             </div>
           </div>
         </div>
@@ -120,10 +142,12 @@ export function PracticeTask() {
               <input
                 placeholder="Назва роботи (виконаної підзадачі)"
                 type="text"
+                onChange={setCreateDiary(createDiary.workName)}
               />
             </li>
             <li className="unactive">
-              <input placeholder="Додати підзадачу" type="text" />
+              <input onChange={setCreateDiary(createDiary.workTask[0])} placeholder="Додати підзадачу" type="text" />
+              
             </li>
           </ol>
         </div>

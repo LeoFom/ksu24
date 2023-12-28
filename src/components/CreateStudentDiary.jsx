@@ -1,6 +1,7 @@
 import "../styles/nppTable.scss"
 
 function CreateStudentDiary() {
+    
 
     return(
         <div className="create-body">
