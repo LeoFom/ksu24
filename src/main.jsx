@@ -30,7 +30,7 @@ import CreateFromStudent from './components/CreateFroStudent';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "https://leofom.github.io/ksu24/",
     element: <Loyaut/>,
     children: [{
       path: 'student',
