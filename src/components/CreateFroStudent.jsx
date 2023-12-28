@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/CreateFromStudent.scss";
 
 export default function CreateFromStudent() {
+  // asdad
   const [createDiary, setCreateDiary] = useState({
     "id": 1,
     "name": "Практична 461 Фоменко",
