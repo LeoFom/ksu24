@@ -1,0 +1,68 @@
+.diary {
+        
+    .diary-title {
+        display: flex;
+        justify-content: start;
+    }
+
+    table {
+        table-layout: fixed;
+        border-collapse: collapse;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(248, 248, 248, 0.30), 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+        thead {
+            width: 100%;
+            background: rgba(232, 232, 232, 0.70);
+            tr{
+
+                .head-name{
+                    width: 20%;
+                }
+                .head-student{
+                    width: 20%;                    
+                }
+                .head-course{
+                    width: 7%;
+                }
+                .head-weak{
+                    width: 10%;
+                }
+                .head-data{
+                    text-align: left;
+                    width: 15%;
+                }
+                .head-grade{
+                    width: 8%;
+                }
+                .head-check{
+                    width: 8.6%;
+                }   
+                .head-state{
+                    width: 15%;
+                }
+
+            }
+        }
+
+        tbody{
+            tr{
+                td{
+
+                }
+                .name{
+                    text-align: left;
+                }
+                .student{
+                    text-align: left;
+                }
+                .data{
+                    
+                }
+            }
+        }
+    }
+}

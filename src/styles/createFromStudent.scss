@@ -1,0 +1,210 @@
+.container {
+  // max-width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.createBlock {
+  .prevButton {
+  }
+  button {
+  }
+}
+
+.General {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 3.574px 40.207px 0px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(80px);
+}
+.createBody {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  gap: 20px;
+}
+
+.mainInformation {
+  padding: 25px 0;
+  .TitleBody {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    border-bottom: 1px solid #e8e8e8;
+    gap: 4px;
+    .Title {
+      color: #242220;
+
+      /* Components - surveys/H1 */
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 28.8px */
+      margin-bottom: 11px;
+      .Star {
+        color: #ed1d23;
+
+        /* Components - surveys/H1 */
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+      }
+    }
+  }
+  .ElementBody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px 32px;
+    padding: 0 32px;
+    margin-top: 24px;
+    .element {
+      display: grid;
+      gap: 3px;
+      label {
+        color: rgba(0, 0, 0, 0.85);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+      }
+      .input {
+        border-radius: 5px;
+        border: 1px solid rgba(36, 34, 32, 0.4);
+      }
+    }
+  }
+}
+
+.addFile {
+  .TitleBody {
+    padding: 0 32px;
+    .Title {
+      color: #242220;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 27px */
+      margin-bottom: 22px;
+    }
+  }
+  .Body {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 0;
+    .Image {
+      svg {
+      }
+    }
+    .Information {
+      .first {
+        color: rgba(0, 0, 0, 0.85);
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+      .second {
+        color: rgba(0, 0, 0, 0.45);
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+      }
+    }
+  }
+}
+
+.Task {
+  padding: 25px 32px;
+  .Head {
+    // padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Title {
+      display: flex;
+      justify-content: start;
+      color: rgba(36, 34, 32, 0.85);
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 27px */
+      margin-right: 186px;
+
+      padding: 7px 0px 5px 5px;
+      width: 100%;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .Calendar {
+    }
+  }
+  .Body {
+    padding: 20px 0 25px 0;
+    border-bottom: 1px solid #e8e8e8;
+
+    .Name {
+      color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 27px */
+      ol {
+        padding-inline-start: 35px;
+        display: grid;
+        gap: 14px;
+
+        .unactive {
+          color: rgba(0, 0, 0, 0.35);
+        }
+        li {
+          text-align: start;
+          color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 27px */
+
+          &::marker {
+            background-color: #ed1d23;
+          }
+
+          input {
+            width: 100%;
+            overflow: visible;
+            background-color: unset;
+            border: none;
+
+          }
+        }
+      }
+    }
+  }
+  .Footer {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    .Button {
+      display: flex;
+      gap: 10px;
+      .element {
+        svg {
+        }
+      }
+    }
+  }
+}
